@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #2b2c48;
+  font-family: "Jost", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  height: auto;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s;
+  will-change: box-shadow;
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  transition: 0.3s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-fullname {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.card-jobtitle {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling for the content */
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Transparent scrollbar */
+}
+
+/* Style the scrollbar */
+.card-content::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.card-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.card-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Color of the thumb on hover */
+}
+
+.card-content::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.4); /* Color of the thumb when active */
+}
+
+.card-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.expand-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  color: #4b82ea;
+  margin-top: 10px;
+}

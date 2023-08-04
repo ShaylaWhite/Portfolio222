@@ -1,82 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <title>Your Page Title</title>
 </head>
-
 <body>
-  <div class="card">
-    <div class="card-header">
-      <div class="card-cover"
-        style="background-image: url(https://example.com/image1.jpg);">
-      </div>
-      <img class="card-avatar"
-        src="https://example.com/avatar1.jpg"
-        alt="Avatar 1">
-      <h2 class="card-fullname">John Doe</h2>
-      <p class="card-jobtitle">Web Developer</p>
-    </div>
-    <div class="card-main">
-      <div class="card-social">
-        <a href="#">
-          <svg>...</svg>
-        </a>
-        <a href="#">
-          <svg>...</svg>
-        </a>
-        <a href="#">
-          <svg>...</svg>
-        </a>
-      </div>
-      <div class="card-content">
-        <h3 class="card-subtitle">About Me</h3>
-        <p class="card-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget gravida urna.
-          Etiam nec mauris auctor, aliquet tortor quis, pulvinar orci.
-        </p>
-      </div>
-      <div class="card-buttons">
-        <button class="is-active">About</button>
-        <button>Contact</button>
-        <button>Experience</button>
-      </div>
-      <div class="card-section is-active">
-        <div class="card-timeline">
-          <div class="card-item" data-year="2020">
-            <h4 class="card-item-title">Web Developer</h4>
-            <p class="card-item-desc">Company A</p>
-          </div>
-          <div class="card-item" data-year="2018">
-            <h4 class="card-item-title">Graphic Designer</h4>
-            <p class="card-item-desc">Company B</p>
-          </div>
+  <div class="banner">
+    <h1 class="banner-title">SHAYLA D. WHITE</h1>
+  </div>
+  <div class="portfolio-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-avatar">
+          <img src="shayla.png" alt="Shayla D. White">
+          <h2 class="card-fullname">SHAYLA D. WHITE</h2>
         </div>
+        <p class="card-jobtitle">Frontend Developer</p>
       </div>
-      <div class="card-section">
-        <div class="card-contact-wrapper">
-          <div class="card-contact">
-            <svg>...</svg>
-            <span>Phone: 123-456-7890</span>
-          </div>
-          <div class="card-contact">
-            <svg>...</svg>
-            <span>Email: john.doe@example.com</span>
-          </div>
+      <div class="card-main">
+        <div class="card-content">
+          <h3 class="card-subtitle">About Me</h3>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sit amet nulla consectetur elementum. Nulla facilisi. Sed ultrices urna mi, et consectetur mi vestibulum ac. In sed congue ex, id fermentum elit. Etiam egestas nisl a ipsum tincidunt, a pharetra nulla tristique. Sed malesuada, sem ac ullamcorper tristique, dui quam iaculis tellus, vitae volutpat nulla ex a mi. Phasellus id magna sem. Nulla auctor velit eget pharetra tincidunt.
+            <!-- Add more content here to make the card scrollable -->
+          </p>
         </div>
-        <button class="contact-me">Contact Me</button>
-      </div>
-      <div class="card-section">
-        <p>Experience details go here...</p>
+        <div class="expand-button">Show More</div>
       </div>
     </div>
+
+    <!-- Add more cards here -->
+
   </div>
 
-  <!-- Repeat the above structure for the other two cards -->
-
+  <script src="scripts.js"></script>
 </body>
-
 </html>
