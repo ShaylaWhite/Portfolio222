@@ -139,3 +139,15 @@ body {
   color: #4b82ea;
   margin-top: 10px;
 }
+
+/* Additional styles for avatar alignment in the "About Me" card */
+.card[data-state="#about"] .card-avatar {
+  margin: 0 auto 20px; /* Center the avatar */
+}
+
+/* Additional styles for project images in the "Portfolio" section */
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
