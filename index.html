@@ -6,10 +6,8 @@
   <title>Futuristic Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Meddon&family=Oswald:wght@700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Meddon&family=Oswald:wght@700&family=Prata&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="landing-page">
@@ -18,6 +16,11 @@
       <!-- Card 1 - About Me -->
       <div class="card" data-state="#about">
         <div class="card-content">
+          <div class="card-avatar">
+            <img src="shayla.png" alt="Shayla White" class="avatar-image">
+            <h2 class="card-fullname">Shayla White</h2>
+          </div>
+          <p class="card-jobtitle">Frontend Developer</p>
           <h2>About Me</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tellus sit amet nulla consectetur elementum. Nulla facilisi. Sed ultrices urna mi, et consectetur mi vestibulum ac. In sed congue ex, id fermentum elit.</p>
         </div>
@@ -27,8 +30,22 @@
       <div class="card" data-state="#portfolio">
         <div class="card-content">
           <h2>Our Portfolio</h2>
-          <p>Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Project 2: Nulla facilisi. Sed ultrices urna mi, et consectetur mi vestibulum ac.</p>
+          <div class="project">
+            <h3>Project 1</h3>
+            <img src="project1.png" alt="Project 1 Image" class="project-image">
+          </div>
+          <div class="project">
+            <h3>Project 2</h3>
+            <img src="project2.png" alt="Project 2 Image" class="project-image">
+          </div>
+          <div class="project">
+            <h3>Project 3</h3>
+            <img src="project3.png" alt="Project 3 Image" class="project-image">
+          </div>
+          <div class="project">
+            <h3>Project 4</h3>
+            <img src="project4.png" alt="Project 4 Image" class="project-image">
+          </div>
         </div>
       </div>
 
@@ -36,10 +53,15 @@
       <div class="card" data-state="#contact">
         <div class="card-content">
           <h2>Contact Us</h2>
-          <p>Email: your.email@example.com</p>
-          <p>LinkedIn: Your LinkedIn Profile</p>
-          <p>GitHub: Your GitHub Profile</p>
-          <p>Portfolio: Your Portfolio Website</p>
+          <ul class="contact-details">
+            <li>Email: your.email@example.com</li>
+            <li>LinkedIn: Your LinkedIn Profile</li>
+            <li>GitHub: Your GitHub Profile</li>
+            <li>Portfolio: Your Portfolio Website</li>
+          </ul>
+          <p>
+            Feel free to reach out to me via email or connect with me on LinkedIn and GitHub for more details on my work experience and projects.
+          </p>
         </div>
       </div>
     </div>
