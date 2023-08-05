@@ -1,6 +1,6 @@
 /* CSS */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -48,12 +48,13 @@ body {
   align-items: center;
   overflow-y: hidden; /* Hide the scrollbar on normal state */
   height: 400px; /* Set a fixed height for each card */
+  position: relative; /* Add position relative to contain the scrollbar within the card */
 }
 
 /* Center h2 and p tags within the cards */
 .card-content {
   text-align: center;
-  overflow-y: auto; /* Enable scrolling within the card content */
+  overflow-y: hidden; /* Disable scrolling within the card content by default */
 }
 
 /* Resize the images to fit better inside the small cards */
@@ -64,20 +65,22 @@ body {
 }
 
 /* Show the scrollbar on hover */
-.card:hover {
+.card:hover .card-content {
   overflow-y: auto; /* Show the scrollbar on hover */
 }
 
-/* Style the scrollbar */
-.card::-webkit-scrollbar {
-  width: 5px; /* Set the width of the scrollbar */
+/* Hide the scrollbar thumb and track */
+.card-content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
 }
 
-.card::-webkit-scrollbar-thumb {
+.card-content::-webkit-scrollbar-thumb {
   background-color: transparent; /* Set the scrollbar thumb color to transparent */
 }
 
-.card::-webkit-scrollbar-track {
+.card-content::-webkit-scrollbar-track {
   background-color: transparent; /* Set the scrollbar track color to transparent */
 }
 
@@ -88,40 +91,9 @@ body {
 
 /* Make the text size smaller for all cards */
 .card-content h2 {
-  font-size: 20px; /* Adjust the font size for the heading */
+  font-size: 14px; /* Adjust the font size for the heading */
 }
 
 .card-content p {
-  font-size: 16px; /* Adjust the font size for the paragraph */
-}
-
-/* Style the scrollbar thumb */
-.card::-webkit-scrollbar-thumb {
-  background-color: rgba(75, 130, 234, 0.8); /* Set the scrollbar thumb color */
-  border-radius: 10px; /* Set the border radius of the thumb */
-}
-
-/* Style the scrollbar track */
-.card::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.1); /* Set the scrollbar track color */
-}
-
-/* Style the scrollbar on hover */
-.card:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(75, 130, 234, 1); /* Change the scrollbar thumb color on hover */
-}
-/* Style the scrollbar thumb */
-.card-content.simplebar::-webkit-scrollbar-thumb {
-  background-color: rgba(75, 130, 234, 0.8); /* Set the scrollbar thumb color */
-  border-radius: 10px; /* Set the border radius of the thumb */
-}
-
-/* Style the scrollbar track */
-.card-content.simplebar::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.1); /* Set the scrollbar track color */
-}
-
-/* Style the scrollbar on hover */
-.card-content.simplebar:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(75, 130, 234, 1); /* Change the scrollbar thumb color on hover */
+  font-size: 12px; /* Adjust the font size for the paragraph */
 }
