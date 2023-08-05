@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-y: hidden; /* Hide the scrollbar on normal state */
-  height: 400px; /* Set a fixed height for each card */
+  height: 550px; /* Set a fixed height for each card */
   position: relative; /* Add position relative to contain the scrollbar within the card */
 }
 
